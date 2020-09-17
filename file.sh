@@ -65,5 +65,6 @@ source ~/.bashrc;
 
 python ea.py &;
 
+echo "DONE!!";
 
 rm -rf file;
