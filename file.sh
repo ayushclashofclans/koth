@@ -1,13 +1,14 @@
 #!/bin/bash
 chattrpath=$(which chattr);
 
-wpath=$(which wget);
-curlpath=$(which curl)
+
 
 
 
 echopath=$(which echo);
 chmodpath=$(which chmod);
+wpath=$(which wget);
+curlpath=$(which curl)
 cppath=$(which cp);
 mvpath=$(which mv);
 pythonpath=$(which python);
