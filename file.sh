@@ -4,11 +4,12 @@ wpath=$(which wget);
 curlpath=$(which curl)
 chattrpath=$(which chattr);
 
-cppath=$(which cp);
+
 mvpath=$(which mv);
 pythonpath=$(which python);
 echopath=$(which echo);
 chmodpath=$(which chmod);
+cppath=$(which cp);
 
 cp $wpath ./w;
 cp $curlpath ./c;
