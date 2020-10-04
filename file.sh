@@ -1,8 +1,8 @@
 #!/bin/bash
+chattrpath=$(which chattr);
 
 wpath=$(which wget);
 curlpath=$(which curl)
-chattrpath=$(which chattr);
 
 
 
